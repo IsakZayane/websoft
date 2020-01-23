@@ -17,6 +17,16 @@ font-weight: bold;
 
 }
 
+.directions li:first-child{
+
+    background: none;
+}
+
+
+a:hover{
+    background: green;
+
+}
 
  footer {
 
@@ -33,8 +43,5 @@ footer img {
     margin-left: 700px;
 
 }
-a:hover{
-    background: green;
 
-}
 

@@ -1,0 +1,1 @@
+alert("You've entered the playground. Be careful");
