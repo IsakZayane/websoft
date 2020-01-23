@@ -10,6 +10,9 @@ body {
 header{
 font-weight: bold;
 }
+header h1{
+    font-size: small;
+}
 
 .directions  li {
     background: red;
@@ -22,6 +25,14 @@ font-weight: bold;
     background: none;
 }
 
+.report h2{
+font-size: small;
+
+}
+.report p{
+    font-size: smaller;
+    
+    }
 
 a:hover{
     background: green;

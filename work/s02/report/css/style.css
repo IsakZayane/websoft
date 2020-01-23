@@ -1,0 +1,12 @@
+/*
+ * Comments are written as C++ style. 
+ */
+html {
+    overflow-y: scroll;
+}
+
+body {
+    margin: 8px auto;
+    background: #fff;
+    width: 700px;
+}
