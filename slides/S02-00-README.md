@@ -1,6 +1,10 @@
 What to do today?
 ======================
 
+1. Examination days and rest examination
+
+1. Project setup & techniques
+
 1. Show off how the web browser frameworks
     * Devtools
     * View source
