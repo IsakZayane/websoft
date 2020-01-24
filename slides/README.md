@@ -20,7 +20,8 @@ Here are the slideshows.
 
 * [Course introduction](s00-01-course_introduction)
 * [S01: Web Application Development](s01-01-web_application_development)
-* [S02: HTML](s02-01-HTML-CSS-JavaScript)
+* [S02: HTML, CSS, JavaScript](s02-01-HTML-CSS-JavaScript)
+
 <!--
 * [S02: JavaScript](s02-03-JavaScript)
 * [S03: JavaScript and Document Object Model (DOM)](s03-01-JavaScript_and_DOM)
