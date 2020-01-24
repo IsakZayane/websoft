@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8" />
+<title>websoft</title>
+
+<!-- Mithril HTML Slideshow styles -->
+<link href="css/mithril-slideshow.css" rel="stylesheet" />
+
+<!-- Code formatting using highlight.js -->
+<link rel="stylesheet" href="css/default.css">
+<link rel="stylesheet" href="css/tomorrow.css">
+<script src="js/highlight.pack.js"></script>
+
+<!-- Text formatting using Markdown through showdown.js -->
+<script src="js/showdown.min.js"></script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Software Development for the Web
+## HTML, CSS, JavaScript
+### Mikael Roos
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Agenda
+
+* HTML
+* CSS
+* JavaScript
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# HTML
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# HTML element
+
+```html
+<p>
+    Here is the content in the paragraph.
+</p> 
+```
+
+```html
+<p class="blog">
+    Here is the content in the paragraph.
+</p> 
+```
+
+```html
+<starttag attribut="value">
+    Content of the element
+</endtag> 
+```
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# Single tag element
+
+```html
+<br/>
+<hr/>
+```
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# Structure
+
+```html
+<!doctype html>
+<html>
+    <head>
+        
+    </head>
+
+    <body>
+        
+    </body>
+</html>
+```
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# Does it validate?
+
+```html
+<!doctype html>
+
+<meta charset="utf-8">
+<title>Me-page</title>
+
+<h1>About me</h1>
+<p>Here is my own me-page.
+<img src="img/me.jpg" class="me"
+ alt="Image on Mikael Roos">
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# To use elements
+
+* How many elements are there?
+    * 120 in the standard?
+    * 20-40 on an average site?
+* HTML 4 versus HTML 5 (5.1, 5.2, etc) versus XHTML
+* Anonymous elements (div, span)
+* Semantic elements (header, footer, nav, section, article)
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Block / Inline
+
+* Block (div, h1, p, ul, ol, table)
+* Inline (span, s, i, img, a)
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# CSS
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+
+<iframe src="https://arkiv.dbwebb.se/kod-exempel/css/page-nostyle.html" width="1024" height="900" frameborder="0"></iframe>
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+
+<iframe src="https://arkiv.dbwebb.se/kod-exempel/css/page.html" width="1024" height="900" frameborder="0"></iframe>
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# Style with CSS
+
+```html
+<link rel="stylesheet" href="style.css">
+```
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# CSS rule
+
+```css
+body {
+    background-color: #E9E9E9;
+}
+
+h1,
+p {
+    font-family: georgia, "Times New Roman", serif;
+    font-size: 19px;
+}
+```
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# CSS syntax
+
+```css
+selector { property: value }
+
+selector,
+selector {
+    property: value;
+    property: value;
+}
+```
+
+</script>
+
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# Style what?
+
+```css
+h1 { font-weight: bold; }
+
+.warning { color: red; }
+
+#headline { border-bottom: 1 px solid #333; }
+```
+
+```html
+<h1 id="headline" class="warning">
+    A bold, red and underlined header.
+</h1>
+```
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# Style where?
+
+* External stylesheet in separate file
+    * `<link rel="stylesheet" href="style.css">`
+* Embedded in HTML page head
+    * `<head><style>   </style></head>`
+* Inline style in the element
+    * `<p style="color: red;"></p>`
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# Which style is used?
+
+Short answer:
+
+* The closer to the element, that rule is used
+* Rules are overloaded and overwritten
+* `!important` takes precedence  
+    `.red { color: red !important; }`
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Challenge with HTML?
+
+* Make the structure validate
+* A structure easy to style
+* Prepare the page for styling
+* The structure is search engine friendly
+
+</script>
+
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Challenge with CSS?
+
+* With small means style a web page
+* Style as you may, independent on the HTML structure
+* A god base style and structure - easy to modify and extend
+* To make HTML and CSS work together
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# Hjälp to get going
+
+* [MDN overview of elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+* [HTML cheatsheet](https://websitesetup.org/html5-cheat-sheet/)
+* [W3C cheatsheet](https://www.w3.org/2009/cheatsheet/)
+* Google "mdn html html-element"
+* Googla "mdn css property-name"
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Where to learn more basics?
+
+* [Google Search Engine Optimization
+Starter Guide](https://static.googleusercontent.com/media/www.google.co.uk/en/uk/webmasters/docs/search-engine-optimization-starter-guide.pdf)
+* [SMACSS Scalable and Modular Architecture for CSS](http://smacss.com/book/)
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Validators
+
+* Use the validator to check your code
+    * [HTML](https://validator.w3.org/)
+    * [CSS](https://jigsaw.w3.org/css-validator/)
+    * [Unicorn](https://validator.w3.org/unicorn/check)
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# HTML + CSS
+
+* Make them work together
+* In a beatiful way
+* Make beatiful code
+* Thats the challenge
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# JavaScript
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Why client side scripting?
+
+* More dynamic than CSS can provide
+* Animations
+* Fetch, display, without reload
+* Validate (form) before post
+* Graphical widgets
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# JavaScript
+
+* Programming language
+* Built in methods
+* Document Object Model (DOM)
+* Event driven (callbacks)
+* Asynchronous requests (fetch)
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+#JavaScript code
+<pre data-code="c100"></pre>
+</script>
+
+<script id="c100" data-role="code" data-language="javascript" type="text/html">
+/**
+ * This is some basics in JavaScript.
+ */
+
+// One line comment
+
+var someValue = 42;
+var someString = "42";
+
+if (someValue == "42") {
+    console.log("Yes, its 42 alright.");
+}
+
+if (someString === "42") {
+    console.log("Yes, its 42 alright.");
+}
+
+// Short syntax for an if statement
+var res = someValue === 42 ? 42 : "42";
+console.log(res);
+
+var i = 0;
+while (i < 42) {
+    i++;
+}
+console.log(i);
+
+for (i = 37; i <= 42; i++) {
+    console.log(i);
+}
+
+function alpha(x, y) {
+    return x + y;
+}
+
+console.log(alpha(40, 2));
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Browser incompatibility
+
+* [Can I Use](https://caniuse.com/)
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Frameworks
+
+* CSS frameworks
+* JavaScript frameworks
+* [The state of JavaScript](https://2019.stateofjs.com/)
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Last words
+
+* Questions on that?
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+</script>
+
+
+
+<!-- include essential js-script -->
+<script src="js/mithril.min.js"></script>
+<script src="js/mithril-slideshow.js"></script>
