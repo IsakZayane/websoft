@@ -45,13 +45,17 @@ a:hover{
     padding-bottom: 5px;
     color: white;
     height: 100px;
+    border-radius: 10px;
 
 }   
 footer li {
     list-style-type: none;
+    
 }
 footer img {
     margin-left: 700px;
+    border-radius: 10px;
+
 
 }
 
