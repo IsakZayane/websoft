@@ -1,0 +1,10 @@
+.duck {
+    width: 128px;
+    height: 128px;
+    border: 1px solid black;
+    background-image: url(duck.png);
+    background-size: 128px;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+}
