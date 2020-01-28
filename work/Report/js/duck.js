@@ -16,12 +16,13 @@
 
 
     element.addEventListener("mouseover", function() {
-        element.style.left = element.offsetLeft + Math.random() * 100 + "px";
-        element.style.top = element.offsetTop + Math.random() * 100 + "px";
 
-        console.log(element.offsetLeft);
-        console.log(Math.random() * 100);
+        if (element.offsetLeft > 50) {
+            element.style.left = element.offsetLeft - Math.random() * 100 + "px";
+        } else {
+            element.style.left = element.offsetLeft + Math.random() * 100 + "px";
 
+        }
     });
 
 

@@ -1,7 +1,13 @@
 /**
  * @preserve Made by dbwebb-staff, staff@dbwebb.se
  */
-(function() {
+
+var myButton = document.getElementById("myButton");
+
+
+
+myButton.onclick = function() {
+    console.log("button clicked");
     'use strict';
 
     var myContent = document.getElementById('content');
@@ -14,7 +20,7 @@
 
     //fetch('https://api.scb.se/UF0109/v2/skolenhetsregister/sv/kommun/1081')
 
-    fetch('data/1081.json')
+    fetch('../Data/1081.json')
         .then((response) => {
             return response.json();
         })
@@ -24,8 +30,9 @@
         });
 
 
-    console.log('Sandbox MEGA is ready!');
-})();
+    console.log('Table has been populated! Yay');
+
+};
 
 
 

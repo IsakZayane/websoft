@@ -26,6 +26,18 @@ header h1 {
     font-size: small;
 }
 
+.duck {
+    width: 128px;
+    height: 128px;
+    background-image: url(../resources/duck.png);
+    background-size: 128px;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+}
+
 .report h2 {
     font-size: small;
 }
@@ -42,12 +54,28 @@ a:active {
     background: black;
 }
 
-.button:hover {
+button:hover {
     background-color: red;
 }
 
+button {
+    margin-left: 20%;
+    padding: 15px 35px 15px 35px;
+    font-size: 28px;
+    margin-bottom: 8px;
+    transition: transform .2s;
+}
+
+button:hover {
+    transform: scale(1.4);
+}
+
+#theTable {
+    margin-right: 20%;
+}
+
 #tabCell:hover {
-    background-color: red;
+    background-color: blue;
 }
 
 #tabCell {
