@@ -42,6 +42,23 @@ a:active {
     background: black;
 }
 
+.button:hover {
+    background-color: red;
+}
+
+#tabCell:hover {
+    background-color: red;
+}
+
+#tabCell {
+    border: 1px solid;
+}
+
+#tableHeader {
+    border: 2px solid;
+    text-align: left;
+}
+
 footer {
     background: black;
     padding-bottom: 5px;
