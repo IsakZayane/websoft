@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="../style/style.css">
 
+    <title>Document</title>
 </head>
 
 <body>
@@ -27,8 +27,28 @@
 
         </div>
     </section>
-    <header>Contact Me</header>
-    <div id="duck" class="duck"></div>
+    <p>Add another page flag.html which has three links showing three different country names. </br>Each country flag should be displayed when the user clicks the country link. The flags should be created using pure HTML/CSS (no images).</p>
+
+    <section class="flagSection">
+        <ul>
+            <li class="FLAG"><a onclick="displayFlag('Sweden'); return false;">Sweden</a></li>
+            <li class="FLAG"><a onclick="displayFlag('Finland'); return false;">Finland</a></li>
+            <li class="FLAG"><a onclick="displayFlag('Japan'); return false;">Japan</a></li>
+        </ul>
+
+        <ul class="actualFlag">
+            <li>
+                <div class="Sweden" id="Sweden"> </div>
+            </li>
+            <li>
+                <div class="Finland" id="Finland"> </div>
+            </li>
+            <li>
+                <div class="Japan" id="Japan"></div>
+            </li>
+        </ul>
+
+    </section>
 
 
     <footer>
@@ -41,7 +61,9 @@
         </ul>
 
     </footer>
-    <script src="../js/duck.js"></script>
+
+    <script src="../js/flags.js"></script>
+
 
 </body>
 
