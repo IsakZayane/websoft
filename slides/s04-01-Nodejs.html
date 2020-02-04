@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="sv">
+<meta charset="utf-8" />
+<title>webbsoft</title>
+
+<!-- Mithril HTML Slideshow styles -->
+<link href="css/mithril-slideshow.css" rel="stylesheet" />
+
+<!-- Code formatting using highlight.js -->
+<link rel="stylesheet" href="css/default.css">
+<link rel="stylesheet" href="css/tomorrow.css">
+<script src="js/highlight.pack.js"></script>
+
+<!-- Text formatting using Markdown through showdown.js -->
+<script src="js/showdown.min.js"></script>
+
+
+
+<!-- Here comes the slides in order -->
+<script data-role="slide" data-markdown type="text/html">
+# Software Development for the Web
+## Node.js
+### Mikael Roos, dbwebb
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Agenda
+
+* JavaScript
+* Node.js
+* Programming paradigm
+* Callback, promise, async/await
+* About modules
+* About connection to MySQL
+* Code samples
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# JavaScript
+
+* 1995, Netscape, Brendan Eich, 10 days
+* ECMAScript standard
+* ES5, ES5.1
+* ES6 - ES10, ES2015 - ES2019
+* Ref manual on MDN
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Node.js
+
+* Opensource, cross platform
+* Ryan Dahl, 2009
+* JS on the server was used previously that, but not that popular
+* Google V8 js engine + event loop + I/O API
+* 2010 npm
+* Same language on client and server
+* Own website and ref manual
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Programming paradigm
+
+* Event driven
+* Asynchronous
+* Blockande I/O
+* Event loop
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Callbacks
+
+```
+rl.question("What to search for? ", function(search) {
+    console.info(str);
+});
+```
+
+```
+rl.question("What to search for? ", (search) => {
+    console.info(str);
+});
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Promise
+
+* A result of an asynchronous operation
+* Pending... initial state
+* Fulfilled... state of successful operation
+* Rejected... state of failed operation
+* Function returns a Promise()
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Promise...
+
+```
+function readFile(filename, enc){
+    return new Promise(function (fulfill, reject) {
+        fs.readFile(filename, enc, function (err, res) {
+            if (err)
+                reject(err);
+            else
+                fulfill(res);
+        });
+    });
+}
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Async / await
+
+* A function generating a Promise, can be used with await
+* A function using await, must be defined as async
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Async / await...
+
+```
+str = await readFile(filename, "UTF-8");
+console.info(str);
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Promisifying
+
+* Add a layer of Promis on top of a callback function
+* Allows to use async and await
+* Use Node.js built-ins (util.promisfy)
+* Genrally available on external libs (promisfy-ish)
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Connect to MySQL
+
+* Externt lib, via npm
+    * npm install mysql
+* Layer of Promise (async/await)
+    * npm install promise-mysql
+* Each lib has its own documentation
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Moduler
+
+* Functioner and classes kan be organised as modules
+* Variants of working with modules
+    * Standardised "ES6 import", has limited support
+* Node.js has require (lets use that)
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Example programs
+
+* Basic code structure
+* Async and await
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Last words
+
+* Questions on that?
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+<!-- empty slide by intention -->
+</script>
+
+
+
+<!-- include essential js-script -->
+<script src="js/mithril.min.js"></script>
+<script src="js/mithril-slideshow.js"></script>
+
+</html>

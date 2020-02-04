@@ -1,0 +1,4 @@
+--
+-- Reports
+--
+SELECT * FROM tech;

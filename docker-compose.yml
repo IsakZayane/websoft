@@ -1,0 +1,58 @@
+version: "3"
+
+volumes:
+    mysql_data: {}
+    mariadb_data: {}
+
+services:
+    # Primary services to use with this course
+    websoft: &websoft
+        #image: dbwebb/courserepo:databas
+        image: dbwebb/courserepo:cli
+        volumes:
+            - ".:/home/dbwebb/repo"
+            - "/home/dbwebb/repo/bin"
+            - "/home/dbwebb/repo/build"
+            - "/home/dbwebb/repo/node_modules"
+            - "/home/dbwebb/repo/vendor"
+            - "./example/docker/my.cnf:/home/dbwebb/.my.cnf"
+
+    cli:
+        <<: *websoft
+        #image: dbwebb/courserepo:cli
+        # image: dbwebb/courserepo:databas
+        # volumes:
+        #     - ".:/home/dbwebb/repo"
+        #     - "./example/sql/inspect/my.cnf:/home/dbwebb/.my.cnf"
+
+    server:
+        <<: *websoft
+        ports:
+            - "1337:1337"
+
+    mariadb:
+        container_name: mariadb
+        image: mariadb/server:latest
+        restart: always
+        ports:
+            - "13306:3306"
+        environment:
+            MARIADB_ROOT_PASSWORD: pass
+        volumes:
+            - mariadb_data:/var/lib/mysql
+            - ./sql.d:/docker-entrypoint-initdb.d
+            - ./example/docker/mariadb_my.cnf:/root/.my.cnf
+
+    mysql:
+        container_name: mysql
+        image: mysql:latest
+        restart: always
+        command: --default-authentication-plugin=mysql_native_password
+        ports:
+            - "13306:3306"
+        environment:
+            MYSQL_ROOT_PASSWORD: pass
+        volumes:
+            - mysql_data:/var/lib/mysql
+            - ./sql.d:/docker-entrypoint-initdb.d
+            - ./example/docker/mysql_my.cnf:/root/.my.cnf

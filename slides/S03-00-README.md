@@ -8,8 +8,6 @@ Morning
 
 1. Slides on JavaScript Core
 
-1. Slides on JavaScript and the browser
-
 
 
 Afternoon
@@ -27,9 +25,34 @@ Afternoon
 
 
 
-Fix this
+
+
+
+
+
+
+
+
+
+
+Fix this Mikael
 ----------------------
 
-1. Examination days and rest examination
+1. Examination days and rest examination (book, update lecture plan and announce on Canvas)
 
-1. Project setup & techniques
+1. Publish about project setup & techniques (Canvas)
+
+    1. Aid in creating project groups
+
+    1. Publish requirements on project
+
+1. Publish videos and link to them (DONE)
+
+1. Link to the slides (in Canvas)
+
+1. About CORS (link to info).
+
+
+Tomorrow fixes
+1. (How to setup XAMPP)
+1. S05/A05 PHP
