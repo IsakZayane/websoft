@@ -1,4 +1,8 @@
-﻿using System;
+/**
+ * Read more examples in the tutorials
+ * https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/
+ */﻿
+using System;
 
 namespace hello
 {
@@ -77,6 +81,13 @@ namespace hello
             Statement();
 
             Iterate();
+
+            // Print out the incoming variables
+            Console.WriteLine("Here are the incoming arguments from the command line:");
+            foreach(var item in args)
+            {
+                Console.WriteLine(item.ToString());
+            }
 
             //return 1;
             return 0;
