@@ -1,0 +1,10 @@
+Well. Since we have used github for our two latest projects, I'm quiet familiar with it. 
+First time using github I only used the terminal, our teacher Andreas adviced us to do so. Then we didnt use github for 6 months or so. 
+The next project i used the integrated git in intelliJ, which makes merge conflicts waaaaay easier to control in my opinion. 
+But for this assignment i've used the terminal, which is good to refresh your memory. And its the first time I use tags in git. Which will be interesting. 
+
+
+I've never craeted a website before, i did however start using html and css a few weeks before we started the course, so I have a small headstart. 
+I've barely touched JS but one alert message. Im looking forward to apply more js on my website. 
+
+So, my TIL this section is probably tags, and with a little headstart, how to seperate JS from html. Also some more css!  

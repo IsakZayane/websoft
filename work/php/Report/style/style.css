@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(63, 214, 131);
+    min-width: 99.5%;
+}
+
+.features {
+    padding-top: 1px;
+    padding-right: 22px;
+    background-color: rgb(100, 155, 125);
+    padding-bottom: 10px;
+    width: 15%;
+}
+
+.features ul li {
+    border: 2px groove;
+    margin-left: 0px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    list-style-type: none;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    display: none;
+}
+
+.features:hover li {
+    display: block;
+}
+
+.features:hover p {
+    display: none;
+}
+
+.features p {
+    text-align: center;
+    font-size: 44px;
+    margin: 12px 0px 8px 0px;
+}
+
+header {
+    font-weight: bold;
+}
+
+.myCanvas {
+    background-color: red;
+    display: block;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: small;
+}
+
+.duck {
+    width: 128px;
+    height: 128px;
+    background-image: url(../resources/duck.png);
+    background-size: 128px;
+    position: absolute;
+    top: 15%;
+}
+
+#duckButton {
+    opacity: 0;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+#duckButton:hover {
+    opacity: 1;
+}
+
+.flagSection {
+    margin-bottom: 400px;
+}
+
+.flagSection li {
+    display: inline;
+    margin-right: 300px;
+}
+
+.Sweden {
+    width: 40px;
+    height: 40px;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 25%, yellow 25%, yellow 33%, rgba(255, 255, 255, 0) 33%), -webkit-linear-gradient(bottom, blue 45%, white 45%, white 55%, blue 55%);
+    visibility: hidden;
+}
+
+.flagSection .actualFlag {
+    position: absolute;
+    background-color: red;
+}
+
+.Finland {
+    margin-left: 420px;
+    width: 120px;
+    height: 80px;
+    margin-top: 0px;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 25%, blue 25%, blue 33%, rgba(255, 255, 255, 0) 33%), -webkit-linear-gradient(bottom, white 45%, blue 45%, blue 55%, white 55%);
+    visibility: hidden;
+}
+
+.Japan {
+    margin-left: 420px;
+    width: 120px;
+    height: 80px;
+    margin-top: 0px;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 25%, blue 25%, blue 33%, rgba(255, 255, 255, 0) 33%), -webkit-linear-gradient(bottom, white 45%, blue 45%, blue 55%, white 55%);
+    visibility: hidden;
+}
+
+.FLAG .mygga {
+    width: 128px;
+    height: 64px;
+    background-image: url(../resources/mygga.png);
+    background-size: 128px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.report h2 {
+    font-size: small;
+}
+
+.report p {
+    font-size: smaller;
+}
+
+a:hover {
+    background: green;
+}
+
+a:active {
+    background: black;
+}
+
+button:hover {
+    background-color: red;
+}
+
+#myButton {
+    margin-left: 20%;
+    padding: 15px 35px 15px 35px;
+    font-size: 22px;
+    margin-bottom: 8px;
+    transition: transform .2s;
+}
+
+button:hover {
+    transform: scale(1.4);
+}
+
+#theTable {
+    border: 1px solid;
+    margin-right: 20%;
+}
+
+#tabCell:hover {
+    background-color: blue;
+}
+
+#tabCell {
+    border: 1px solid;
+}
+
+#tableClass {
+    border: 1px solid;
+}
+
+footer {
+    background: black;
+    padding-bottom: 5px;
+    color: white;
+    height: 100px;
+    border-radius: 10px;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+.hkrLogo {
+    margin-right: 5%;
+    border-radius: 10px;
+}

@@ -4,6 +4,13 @@ body {
     min-width: 99.5%;
 }
 
+#selectOption {
+    width: 130px;
+    height: 40px;
+    font-size: 22px;
+    padding-bottom: 0px;
+}
+
 .features {
     padding-top: 1px;
     padding-right: 22px;
@@ -80,15 +87,11 @@ header h1 {
 }
 
 .Sweden {
-    width: 40px;
-    height: 40px;
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 25%, yellow 25%, yellow 33%, rgba(255, 255, 255, 0) 33%), -webkit-linear-gradient(bottom, blue 45%, white 45%, white 55%, blue 55%);
+    margin-left: 40px;
+    width: 120px;
+    height: 80px;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 25%, yellow 25%, yellow 33%, rgba(255, 255, 255, 0) 33%), -webkit-linear-gradient(bottom, blue 45%, yellow 45%, yellow 55%, blue 55%);
     visibility: hidden;
-}
-
-.flagSection .actualFlag {
-    position: absolute;
-    background-color: red;
 }
 
 .Finland {
@@ -100,12 +103,17 @@ header h1 {
     visibility: hidden;
 }
 
+.actualFlag div {
+    position: absolute;
+    margin-top: 50px;
+}
+
 .Japan {
-    margin-left: 420px;
+    margin-left: 800px;
     width: 120px;
     height: 80px;
     margin-top: 0px;
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 25%, blue 25%, blue 33%, rgba(255, 255, 255, 0) 33%), -webkit-linear-gradient(bottom, white 45%, blue 45%, blue 55%, white 55%);
+    background: radial-gradient(80px at 50% 50%, #BC002D 0, #BC002D 35%, transparent 35%, transparent 100%), white;
     visibility: hidden;
 }
 

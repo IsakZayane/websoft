@@ -1,35 +1,20 @@
+<?php 
+$pageTitle = "Home";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Zayane</title>
-    <link rel="stylesheet" type="text/css" href="../style/style.css">
 
-</head>
 
 <body class="body">
 
 
+<?php 
+require __DIR__ . "./../view/header.php"  ?>
 
-    <section class="features">
-        <p>Menu</p>
-        <div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutMe.html">About</a></li>
-                <li><a href="contactMe.html">Contact me</a></li>
-                <li><a href="jsplayground.html">Playground</a></li>
-                <li><a href="report.html">Report</a></li>
-                <li><a href="schools.html">MegaSandBox</a></li>
-                <li><a href="flags.html">Flags</a></li>
 
-            </ul>
-
-        </div>
-    </section>
 
     <header>Home</header>
 
@@ -52,16 +37,8 @@
     </p>
 
 
-    <footer>
-        <ul>
-            <li>Isak Zayane</li>
-            <li></li>
-            <li>isak.zayane0002@stud.hkr.se</li>
-            <img class="hkrLogo" src="../resources/hkrlogo.jpg" alt="Isak" height="42" width="42">
+    <?php require __DIR__ . "./../view/footer.php"  ?>
 
-        </ul>
-
-    </footer>
     <script src="../js/duck.js"></script>
 
 </body>
