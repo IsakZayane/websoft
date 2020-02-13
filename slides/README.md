@@ -28,10 +28,8 @@ Here are the slideshows.
     * [JavaScript frameworks](s06-02-JavaScript_frameworks)
 * S07: ASP.NET and Model View Controller (MVC)
     * [.NET Core](s07-01-dotnet_core)
+    * [ASP.NET Core](s07-02-asp_dotnet_core)
 
-<!--
-* [ASP.NET Core](s08-01-asp_dotnet_core)
--->
 
 
 ```

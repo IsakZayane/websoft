@@ -31,7 +31,7 @@ services:
             - "1337:1337"
 
     mariadb:
-        container_name: mariadb
+        container_name: mariadb_websoft
         image: mariadb/server:latest
         restart: always
         ports:
@@ -44,7 +44,7 @@ services:
             - ./example/docker/mariadb_my.cnf:/root/.my.cnf
 
     mysql:
-        container_name: mysql
+        container_name: mysql_websoft
         image: mysql:latest
         restart: always
         command: --default-authentication-plugin=mysql_native_password
