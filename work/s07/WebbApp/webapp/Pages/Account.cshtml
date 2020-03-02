@@ -1,0 +1,45 @@
+@page
+@model AccountModel
+@{
+    ViewData["Title"] = "Account";
+}
+
+<html>
+<head>
+</head>
+
+
+<body>
+    <div>
+
+
+    <table>
+        <tr>
+        <th>Number</th>
+        <th>Label</th>
+        <th>Balance</th>
+        <th>Owner</th>
+        </tr>
+    @foreach (var item in Model.Accounts)
+    {<tr>
+
+        <td>@item.Number</td>
+        <td>@item.Label</td>
+        <td>@item.Balance</td>
+        <td>@item.Owner</td>
+    </tr>
+   
+
+    }
+    </div>
+
+
+        
+
+
+    </table>
+
+
+</body>
+
+</html>

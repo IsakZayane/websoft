@@ -23,4 +23,10 @@ router.get("/about", (req, res) => {
 
 });
 
+router.post("/lotto", (req, res) => {
+
+    res.send
+
+});
+
 module.exports = router;
