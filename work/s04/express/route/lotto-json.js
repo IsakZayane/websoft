@@ -13,7 +13,7 @@ router.get('/lotto-json', (req, res) => {
     data.numbers = [];
 
 
-
+    //lotto-json?row=1,3,7,9,28,33,35
 
     var row = req.param('row');
     data.row = row.split(",");
@@ -45,8 +45,6 @@ router.get('/lotto-json', (req, res) => {
 
             if (data.numbers[i] == data.row[j]) {
                 correctNum++;
-                console.log("HIT!!!");
-                console.log(correctNum);
             }
         }
 

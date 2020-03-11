@@ -6,6 +6,7 @@ namespace app
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello and welcome to the ");
@@ -34,18 +35,19 @@ namespace app
 
             choice = choice.ToLower();
             Console.WriteLine("You chose " + choice);
+            var accounts = ReadAccounts();
 
             switch (choice)
             {
 
 
                 case "1": //View accounts from JSON
-                    printAllAccounts();
 
+                    printAccBeautiful(accounts, 1);
                     break;
 
                 case "2":
-                    getSpecificAccount();
+                    printAccBeautiful(accounts, 2);
                     break;
                 case "exit":
                     Console.WriteLine("Bai bai bai");
@@ -88,6 +90,48 @@ namespace app
 
         }
 
+
+        private static void printAccBeautiful(IEnumerable<Account> accounts, int option)
+        {
+
+
+            TablePrinter tp = new TablePrinter("Number", "Balance", "Laberl", "Owner");
+            switch (option)
+            {
+                case 1: //all accounts
+
+                    foreach (var account in accounts)
+                    {
+
+
+                        tp.AddRow(account.number, account.balance, account.label, account.owner);
+                    }
+                    tp.Print();
+                    break;
+                case 2:  //one account
+                    Console.WriteLine("Which account do you want to access?");
+
+                    String chosenAcc = Console.ReadLine();
+                    Console.WriteLine("Chosen account: " + chosenAcc);
+                    foreach (var account in accounts)
+                    {
+                        if (account.number.ToString().Equals(chosenAcc))
+                        {
+                            tp.AddRow(account.number, account.balance, account.label, account.owner);
+
+                        }
+                    }
+                    tp.Print();
+                    
+
+                    break;
+
+
+            }
+
+
+
+        }
         private static void printAllAccounts()
         {
             //List of accs 
@@ -160,3 +204,9 @@ public class Account
     }
 
 }
+
+
+
+
+//Table beutifier borrowed from : https://stackoverflow.com/questions/856845/how-to-best-way-to-draw-table-in-console-app-c
+//Thanks 

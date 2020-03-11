@@ -11,6 +11,9 @@ router.get("/lotto", (req, res) => {
         lottoRow[i] = new lotto();
         lottoRow[i].roll();
     }
+    lottoRow.sort(function(a, b) {
+        return a - b;
+    });
 
     res.send("Todays lottery number: " + lottoRow.toString());
 
@@ -23,10 +26,6 @@ router.get("/about", (req, res) => {
 
 });
 
-router.post("/lotto", (req, res) => {
 
-    res.send
-
-});
 
 module.exports = router;
