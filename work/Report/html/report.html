@@ -109,6 +109,8 @@
 
             <h3>Whats my TIL?</h3>
             <p>Well i learned some PHP and how to connect to a database. Which wasnt so complicated afterall. Edit: I also learned that one thing might work one day, but the next they wont. So always check your assignments and code once in a while.
+                <p>EDIT: After working with my project and using node.js with mySQL i feel like PHP is way more complicated and messy. </p>
+
                 <br/> Added a picture for fun </p>
             <img class="profilePic" src="../resources/phpMocking.png" alt="php" height="320" width="320">
 
@@ -173,12 +175,22 @@
 
         <section>
             <h2>S09</h2>
-            <h3>Q1</h3>
-            <p>Here is the text for this section.</p>
-            <h3>Q2</h3>
-            <p></p>
+            <h3>Elaborate on a few (3-5) different security issues or concerns, from your own experience, related to web application security and relate them to the OWASP top ten.</h3>
+            <p> Well one of the classic security concern one must take into consideration is SQL injections. It is possible if you write database queries directly as e.g. a String that it can get exposed to injections. It is listed as the number #1 security
+                risk in the OWASP top 10 list. You can use prepared statement to avoid injections, as far as i know.
+                <br/> If you however decide/not know about prepared statements you can leak sensetive data to your 'hacker'. Hopefully you have encrypted your stored data with a good encryptor. You do not want to leak sensetive data to a hacker who can
+                sell it or publish it to the public. Your credibility as a developer and site will be very bad. This topic is also listed on OWASPs top 10 list. 'Sensetive data exposure'
+                <br/> 'Broken access control' is also another security concern. It is when you have different functions for different kind of users. Like in our project, we have a function for an Admin to show/hide iamges, to upload images to the server
+                and to delete them. This is not ment for the normal user to be access. So just hidding the URI from the normal user is not enough, one could just try to enter "www.website.com/admin" and simply access it. We have used a library called
+                Passport to authenticate the admin, so they can access only the admin page. Hopefully the passport library is safe. It has around 700k weekly downloads. Some might download it to find vulnerabilities also..
+            </p>
+            <h3>Summarize by providing your own guidelines to a new web programmer on the topic “The essential guidelines to follow to create secure web applications”.</h3>
+            <p>Well. First of all, use prepared statements. Its both easier to program, its easier to alter if you have to change something, and its more secure. Plus the code looks better. :) Then, if you publish an application to the public, encrypt encrypt
+                encrypt. You have a responibility to always secure your users data that they enter. There will always be people that want to hack your site, some will do it too see if they can, some will do it just to be evil.<br/> One should also use
+                some kind of access control to ensure that you high admin stuff wont be exposed to the public. You dont want anyone to, lets say erase all your images in your database just because they accessed your site. <br/> Last but not least, dont
+                use account and password like admin/admin or root/root!! </p>
             <h3>Q3</h3>
-            <p></p>
+            <p>Well, my TIL for this section is security... One can never be safe, but you have take safety safety precautions, like encryption, prepared statements etc. </p>
             <h2>_____________________________________________________________________________________________________________________________________________________________________________________________________</h2>
 
         </section>
